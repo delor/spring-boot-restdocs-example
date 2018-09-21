@@ -32,7 +32,9 @@ dependencies {
 
     compile('org.springframework.boot:spring-boot-starter-web')
     compileOnly('org.projectlombok:lombok')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'junit', module: 'junit'
+    }
     testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
 
     testCompile("org.junit.jupiter:junit-jupiter-api:5.3.1")
