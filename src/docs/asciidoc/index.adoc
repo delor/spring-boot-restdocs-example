@@ -1,0 +1,13 @@
+= API Guide
+Bartłomiej Piech;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+[[create-greeting]]
+=== Create Greeting
+
+operation::create_greeting[snippets='http-request,http-response']
